@@ -1,5 +1,6 @@
 # neu_gcn
 CNNs on graphs with fast localized spectral filtering code revision
+The code can be used in classification the whole graph
 
 # Detail：
 https://blog.csdn.net/weixin_43279911/article/details/102920457
@@ -20,7 +21,10 @@ Change：
 3.L:the adjacency matrix of nodes,size(116, 116)
 116: the numbers of nodes, each subject has 116 nodes,each node has a feature vector(the length of the vector is 116)
 
-# Use in your data:
+# Results
+Classificating the graph of datasets(one subject one graph),and get the roc/acc.
+
+# Use in your datasets:
 The model is not pre-training,so you can only use the model in your data.
 1.Change the utils.py for load your datasets
 2.Change the main.py for setting the X,Y,L
