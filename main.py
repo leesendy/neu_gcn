@@ -18,8 +18,7 @@ L = [graph.laplacian(A, normalized=True) for A in graphs]
 del A
 
 """# Input data and labels """
-kind = 'correlation'
-
+#kind = 'correlation'
 #subject_IDs = utils.get_ids()
 #networks = utils.load_all_networks(subject_IDs, kind)
 #X = np.array(networks)
