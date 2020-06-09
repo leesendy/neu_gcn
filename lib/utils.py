@@ -3,7 +3,7 @@ import numpy as np
 import scipy.spatial
 import scipy.io as sio
 
-root_folder = '/home/amax/DL/lds/neu_gcn/'
+root_folder = '/home/amax/path/'
 
 def get_atlas_coords(atlas_name='aal'):
     """
@@ -67,7 +67,7 @@ def load_all_networks(subject_list, kind, atlas_name="aal"):
 
     for subject in subject_list:
         fl = os.path.join(root_folder, subject,subject + "_" + atlas_name + "_" + kind + ".mat")
-        #fl = os.path.join('/home/amax/DL/lds/DTI_gcn/Dataset', subject + "_" + atlas_name + "_" + kind + ".mat")
+        #fl = os.path.join('/home/amax/Dataset', subject + "_" + atlas_name + "_" + kind + ".mat")
         matrix = sio.loadmat(fl)['connectivity']
 
         if atlas_name == 'ho':
